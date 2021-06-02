@@ -1,16 +1,12 @@
 <Project Sdk="Microsoft.NET.Sdk">
-
   <PropertyGroup>
-    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>
-
   <ItemGroup>
-    <PackageReference Include="MySql.Data.EntityFrameworkCore" Version="6.10.6" />
-    <PackageReference Include="AWSSDK.SimpleSystemsManagement" Version="3.3.20.1" />
+    <PackageReference Include="MySql.Data.EntityFrameworkCore" Version="8.0.22"/>
+    <PackageReference Include="AWSSDK.SimpleSystemsManagement" Version="3.7.3.11"/>
   </ItemGroup>
-
   <ItemGroup>
-    <ProjectReference Include="..\Entities\Entities.csproj" />
+    <ProjectReference Include="..\Entities\Entities.csproj"/>
   </ItemGroup>
-
 </Project>

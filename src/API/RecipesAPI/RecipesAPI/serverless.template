@@ -26,8 +26,8 @@
     "ProxyFunction" : {
       "Type" : "AWS::Serverless::Function",
       "Properties": {
-        "Handler": "RecipesAPI::RecipesAPI.LambdaEntryPoint::FunctionHandlerAsync",
-        "Runtime": "dotnetcore2.0",
+        "Handler": "not_required_for_custom_runtime",
+        "Runtime": "provided",
         "CodeUri": "",
         "MemorySize": 256,
         "Timeout": 30,

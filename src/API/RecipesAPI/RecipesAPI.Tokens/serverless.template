@@ -26,12 +26,12 @@
     "ProxyFunction" : {
       "Type" : "AWS::Serverless::Function",
       "Properties": {
-        "Handler": "RecipesAPI.Tokens::RecipesAPI.Tokens.LambdaEntryPoint::FunctionHandlerAsync",
-        "Runtime": "dotnetcore2.0",
+        "Handler": ""not_required_for_custom_runtime"",
+        "Runtime": "provided",
         "CodeUri": "",
         "MemorySize": 256,
         "Timeout": 30,
-        "Role": null,
+        "Role": "arn:aws:iam::713588304109:role/lambda-vpc-role",
         "Policies": [ "AWSLambdaFullAccess" ],
         "Environment" : {
           "Variables" : {

@@ -6,16 +6,19 @@
         "dotnet lambda help",
         "All the command line options for the Lambda command can be specified in this file."
     ],
-    "profile"     : "sydney-summit2018",
-    "region"      : "ap-southeast-2",
+    "profile"     : "sdefault",
+    "region"      : "us-east-1",
     "configuration" : "Release",
-    "framework"     : "netcoreapp2.0",
-    "function-runtime" : "dotnetcore2.0",
+    "framework"     : "net5.0",
+    "function-runtime" : "net5.0",
     "function-memory-size" : 256,
     "function-timeout"     : 30,
-    "function-handler"     : "RecipesAPI.Authorizer::RecipesAPI.Authorizer.Function::FunctionHandler",
+    "function-handler"     : "not_required_for_custom_runtime",
     "function-name"        : "RecipesAPI-Authorizer",
     "function-role"        : "arn:aws:iam::205757786632:role/RecipesAPI-Authorizer-ProxyFunctionRole-IIF0S6057IS2",
     "tracing-mode"         : "PassThrough",
-    "environment-variables" : ""
+    "environment-variables" : "",
+    "msbuild-parameters": "--self-contained true",
+    "stack-name": "cmi-api-fwplacement",
+    "s3-bucket": "pluraserv-code-builds"
 }
